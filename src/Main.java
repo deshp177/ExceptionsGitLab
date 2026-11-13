@@ -14,4 +14,7 @@ public class Main {
         System.out.println("Total rows: "
                 + reader.getRowCount());
     }
+    if (reader.getRowCount() != 100) {
+        System.out.println("Row count mismatch!");
+    }
 }
