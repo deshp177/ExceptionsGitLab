@@ -5,7 +5,6 @@ public class Main {
         DataFileReader reader = new DataFileReader();
 
         writer.writeData("data.txt", 100);
-
         reader.readData("data.txt");
 
         System.out.println("Data from file:");
@@ -13,8 +12,9 @@ public class Main {
 
         System.out.println("Total rows: "
                 + reader.getRowCount());
-    }
-    if (reader.getRowCount() != 100) {
-        System.out.println("Row count mismatch!");
+
+        if (reader.getRowCount() != 100) {
+            System.out.println("Row count mismatch!");
+        }
     }
 }
